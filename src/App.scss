@@ -10,8 +10,29 @@
 }
 
 .section {
-	height: 100vh;
-	background: linear-gradient(to bottom, #c43838, #24dda6);
+	min-height: 100vh;
+	background-color: #cadeff;
+}
+
+.section-divider {
+	height: 100px;
+	background-color: #4183fd;
+	border-color: #6da5ff;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-width: 15px;
+}
+
+.section-border {
+	background:
+		linear-gradient(to bottom right, white 50%, #cadeff 50%) top left,
+		linear-gradient(to bottom left, white 50%, #cadeff 50%) top right,
+		linear-gradient(to top right, white 50%, #cadeff 50%) bottom left,
+		linear-gradient(to top left, white 50%, #cadeff 50%) bottom right;
+	background-size:
+		20px 20px,
+		20px 20px; // width and height of corner lines
+	background-repeat: no-repeat;
 }
 
 .navtab {
